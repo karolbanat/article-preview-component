@@ -1,7 +1,10 @@
 body {
 	font-family: var(--ff-primary);
 	background-color: var(--bg-body);
-	overflow: hidden;
+
+	@media (min-width: 52em) {
+		overflow: hidden;
+	}
 }
 
 main {
