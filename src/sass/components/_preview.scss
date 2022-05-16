@@ -16,7 +16,7 @@
 		border-radius: 0.75em 0.75em 0 0;
 
 		@media (max-width: 52em) {
-			height: 12.5em;
+			max-height: 12.5em;
 		}
 
 		@media (min-width: 52em) {
