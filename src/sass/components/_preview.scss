@@ -4,11 +4,13 @@
 	box-shadow: var(--shadow);
 
 	@media (min-width: 52em) {
-		display: flex;
+		display: grid;
+		grid-template-columns: 4fr 6fr;
 	}
 
 	&__image {
 		width: 100%;
+		min-height: 100%;
 		object-fit: cover;
 		object-position: center;
 		border-radius: 0.75em 0.75em 0 0;
