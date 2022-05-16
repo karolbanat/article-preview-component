@@ -1,0 +1,29 @@
+:root {
+	--clr-primary-400: hsl(212, 23%, 69%);
+	--clr-primary-700: hsl(217, 19%, 35%);
+
+	--clr-accent-400: hsl(214, 17%, 51%);
+	--clr-accent-700: hsl(210, 46%, 95%);
+
+	--clr-white: hsl(0, 0%, 100%);
+
+	--ff-primary: 'Manrope', sans-serif;
+
+	// stage
+	--bg-body: var(--clr-accent-700);
+
+	--bg-article: var(--clr-white);
+	--clr-heading: var(--clr-primary-700);
+	--clr-text: var(--clr-accent-400);
+
+	--clr-author-name: var(--clr-primary-700);
+	--clr-date: var(--clr-accent-400);
+
+	--clr-share-arrow: var(--clr-primary-700);
+	--bg-share: var(--clr-accent-700);
+
+	--bg-share-box: var(--clr-primary-700);
+	--clr-share-text: var(--clr-primary-400);
+
+	--shadow: 0 0.5em 1em hsla(0, 0%, 0%, 0.2);
+}

@@ -1,0 +1,35 @@
+.preview {
+	max-width: 45.75em;
+	border-radius: 0.75em;
+	box-shadow: var(--shadow);
+
+	@media (min-width: 52em) {
+		display: flex;
+	}
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 0.75em 0.75em 0 0;
+
+		@media (max-width: 52em) {
+			height: 12.5em;
+		}
+
+		@media (min-width: 52em) {
+			border-radius: 0.75em 0 0 0.75em;
+		}
+	}
+
+	&__article {
+		background-color: var(--bg-article);
+		border-radius: 0 0 0.75em 0.75em;
+		overflow: hidden;
+
+		@media (min-width: 52em) {
+			border-radius: 0 0.75em 0.75em 0;
+			overflow: visible;
+		}
+	}
+}

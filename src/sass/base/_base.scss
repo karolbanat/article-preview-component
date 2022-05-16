@@ -1,0 +1,12 @@
+body {
+	font-family: var(--ff-primary);
+	background-color: var(--bg-body);
+	overflow: hidden;
+}
+
+main {
+	display: grid;
+	place-content: center;
+	padding: 4.75em 1.5em;
+	min-height: 100vh;
+}

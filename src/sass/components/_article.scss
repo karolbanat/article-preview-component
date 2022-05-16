@@ -1,0 +1,23 @@
+.article {
+	padding: 2.5em 2em 1.5em;
+
+	@media (min-width: 52em) {
+		padding-inline: 2.5em;
+	}
+
+	&__heading {
+		margin-bottom: 1.8rem;
+		font-size: 1.6rem;
+		color: var(--clr-heading);
+
+		@media (min-width: 52em) {
+			font-size: 2rem;
+		}
+	}
+
+	&__text {
+		font-size: 1.3rem;
+		line-height: 1.5;
+		color: var(--clr-text);
+	}
+}

@@ -1,0 +1,131 @@
+.share-footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 1.25em 2em;
+
+	@media (min-width: 52em) {
+		padding-inline: 2.5em;
+		padding-block: 0 2em;
+	}
+
+	&__avatar {
+		margin-right: 1em;
+		width: 4rem;
+		aspect-ratio: 1;
+
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	&__author {
+		margin-bottom: 0.25em;
+		font-size: 1.3rem;
+		font-weight: 700;
+		color: var(--clr-author-name);
+	}
+
+	&__date {
+		font-size: 1.3rem;
+		color: var(--clr-date);
+	}
+
+	&__share-btn {
+		display: grid;
+		place-content: center;
+
+		margin-left: auto;
+		width: 2.5em;
+		aspect-ratio: 1;
+
+		background-color: var(--bg-share);
+		border: none;
+		border-radius: 50%;
+
+		transition: transform 0.35s ease;
+		z-index: 100;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+
+		&.active {
+			--bg-share: var(--clr-accent-400);
+			--clr-share-arrow: var(--clr-white);
+		}
+	}
+
+	&__share-icon {
+		font-size: 1.6rem;
+		color: var(--clr-share-arrow);
+	}
+
+	&__media {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+
+		padding: 1.5em 2em;
+		width: 100%;
+		height: 100%;
+
+		background-color: var(--bg-share-box);
+		z-index: 1;
+
+		@media (min-width: 52em) {
+			top: -110%;
+			left: calc(100% - 15.5em + 4.25em);
+
+			padding: 1.125em 2.25em;
+			width: 15.5em;
+			height: auto;
+
+			border-radius: 0.75em;
+			box-shadow: var(--shadow);
+
+			&::before {
+				position: absolute;
+				bottom: -1rem;
+				left: calc(50% - 1rem);
+
+				width: 2rem;
+				height: 2rem;
+
+				background-color: inherit;
+				transform: rotate(45deg);
+				content: '';
+			}
+		}
+
+		&.active {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__share-text {
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		color: var(--clr-share-text);
+	}
+
+	&__media-links {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		margin-left: 1em;
+	}
+
+	&__media-link {
+		img {
+			transition: transform 0.35s ease;
+		}
+
+		&:hover img {
+			transform: scale(1.2);
+		}
+	}
+}
